@@ -8,6 +8,7 @@
 
 import React from 'react';
 import type {Node} from 'react';
+import AntDesign from "react-native-vector-icons/AntDesign";
 import {
   SafeAreaView,
   ScrollView,
@@ -71,6 +72,7 @@ const App: () => Node = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
+            <AntDesign name={'stepforward'} size={30} />
             Edit <Text style={styles.highlight}>App.js</Text> to change this
             screen and then come back to see your edits.
           </Section>
