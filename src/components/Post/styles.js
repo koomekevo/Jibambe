@@ -12,6 +12,14 @@ const styles = StyleSheet.create({
     bottom: 0,
     right: 0,
   },
+  uiContainer: {
+    height: '95%',
+    justifyContent: 'flex-end',
+    backgroundColor: 'flex-end',
+  },
+  rightContainer: {
+    alignSelf: 'flex-end',
+  },
 });
 
 export default styles;

@@ -16,9 +16,9 @@ const App: () => Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <Home />
-      </SafeAreaView>
+      {/*<SafeAreaView>*/}
+      <Home />
+      {/*</SafeAreaView>*/}
     </>
   );
 };

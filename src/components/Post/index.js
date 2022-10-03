@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
 import {View, Text, TouchableWithoutFeedback} from 'react-native';
@@ -25,6 +26,11 @@ const Post = () => {
           paused={paused}
         />
       </TouchableWithoutFeedback>
+      <View style={styles.uiContainer}>
+        <View style={styles.rightContainer}>
+          <Text style={{fontSize: 20, color: '#fff'}}>side</Text>
+        </View>
+      </View>
     </View>
   );
 };
