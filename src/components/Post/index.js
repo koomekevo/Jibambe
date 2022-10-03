@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
-import {View, Text, TouchableWithoutFeedback} from 'react-native';
+import {View, Text, TouchableWithoutFeedback, Image} from 'react-native';
 import Video from 'react-native-video';
 import styles from './styles';
 import Entypo from 'react-native-vector-icons/Entypo';
@@ -29,12 +29,31 @@ const Post = () => {
       </TouchableWithoutFeedback>
       <View style={styles.uiContainer}>
         <View style={styles.rightContainer}>
-          <Text style={{fontSize: 20, color: '#fff'}}>side</Text>
+          <View style={styles.profilePictureContainer}>
+            <Image
+              style={styles.profilePicture}
+              source={{
+                uri: 'https://pbs.twimg.com/profile_images/1541663888600711168/-7irn83H_400x400.jpg',
+              }}
+            />
+            <View style={styles.iconContainer}>
+              <Entypo name={'beamed-note'} size={40} color="#fff" />
+              <Text syle={styles.statsLabel}>123</Text>
+            </View>
+            <View style={styles.iconContainer}>
+              <Entypo name={'beamed-note'} size={40} color="#fff" />
+              <Text syle={styles.statsLabel}>123</Text>
+            </View>
+            <View style={styles.iconContainer}>
+              <Entypo name={'beamed-note'} size={40} color="#fff" />
+              <Text syle={styles.statsLabel}>123</Text>
+            </View>
+          </View>
         </View>
         <View style={styles.bottomContainer}>
-          <Text style={styles.handle}>@daviddobrik</Text>
-          <Text style={styles.description}>hello my boy @borat</Text>
-          <View>
+          <Text style={styles.handle}>@koomekevo</Text>
+          <Text style={styles.description}>hello my girl @caro</Text>
+          <View style={styles.songRow}>
             <Entypo name={'beamed-note'} size={24} color="#fff" />
             <Text style={styles.songName}>Nf - The search</Text>
           </View>

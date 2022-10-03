@@ -17,16 +17,13 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     backgroundColor: 'flex-end',
   },
-  rightContainer: {
-    alignSelf: 'flex-end',
-  },
   bottomContainer: {
     padding: 10,
   },
   handle: {
     color: '#fff',
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: '700',
     marginBottom: 10,
   },
   description: {
@@ -37,11 +34,23 @@ const styles = StyleSheet.create({
   },
   songRow: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   songName: {
     color: '#fff',
     fontSize: 16,
     marginLeft: 5,
+  },
+  // Right Container
+  rightContainer: {
+    alignSelf: 'flex-end',
+  },
+  profilePicture: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    borderWidth: 2,
+    borderColor: '#fff',
   },
 });
 
