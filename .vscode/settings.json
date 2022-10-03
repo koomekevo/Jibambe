@@ -9,6 +9,11 @@
     "amplify/backend/awscloudformation": true
   },
   "cSpell.words": [
+    "jibambe",
     "stepforward"
-  ]
+  ],
+  "python.autoComplete.extraPaths": [
+  ],
+  "flow.useNPMPackagedFlow": true,
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
 }
