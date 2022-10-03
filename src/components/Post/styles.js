@@ -20,6 +20,29 @@ const styles = StyleSheet.create({
   rightContainer: {
     alignSelf: 'flex-end',
   },
+  bottomContainer: {
+    padding: 10,
+  },
+  handle: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
+    marginBottom: 10,
+  },
+  description: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '300',
+    marginBottom: 10,
+  },
+  songRow: {
+    flexDirection: 'row',
+  },
+  songName: {
+    color: '#fff',
+    fontSize: 16,
+    marginLeft: 5,
+  },
 });
 
 export default styles;

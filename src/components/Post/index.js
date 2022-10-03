@@ -4,6 +4,7 @@ import React, {useState} from 'react';
 import {View, Text, TouchableWithoutFeedback} from 'react-native';
 import Video from 'react-native-video';
 import styles from './styles';
+import Entypo from 'react-native-vector-icons/Entypo';
 
 const Post = () => {
   const [paused, setPaused] = useState(false);
@@ -29,6 +30,14 @@ const Post = () => {
       <View style={styles.uiContainer}>
         <View style={styles.rightContainer}>
           <Text style={{fontSize: 20, color: '#fff'}}>side</Text>
+        </View>
+        <View style={styles.bottomContainer}>
+          <Text style={styles.handle}>@daviddobrik</Text>
+          <Text style={styles.description}>hello my boy @borat</Text>
+          <View>
+            <Entypo name={'beamed-note'} size={24} color="#fff" />
+            <Text style={styles.songName}>Nf - The search</Text>
+          </View>
         </View>
       </View>
     </View>
