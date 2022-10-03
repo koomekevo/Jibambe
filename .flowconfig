@@ -60,8 +60,6 @@ nonstrict-import
 sketchy-null
 unclear-type
 unsafe-getters-setters
-untyped-import
-untyped-type-import
 
 [version]
 ^0.170.0

@@ -21,7 +21,7 @@ const Post = () => {
           onError={(e: LoadError) => console.log(e)}
           resizeMode={'cover'}
           repeat={true}
-          paused={paused}
+          paused={true}
         />
       </TouchableWithoutFeedback>
     </View>
