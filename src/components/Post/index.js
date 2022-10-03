@@ -5,7 +5,7 @@ import Video from 'react-native-video';
 import styles from './styles';
 
 const Post = () => {
-  const [paused, setPaused] = useState({initialState: false});
+  const [paused, setPaused] = useState(false);
 
   const onPlayPausePress = () => {
     setPaused(!paused);
@@ -22,7 +22,7 @@ const Post = () => {
           onError={(e: LoadError) => console.log(e)}
           resizeMode={'cover'}
           repeat={true}
-          paused={true}
+          paused={paused}
         />
       </TouchableWithoutFeedback>
     </View>
