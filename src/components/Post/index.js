@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, {useState} from 'react';
 import {View, Text, TouchableWithoutFeedback} from 'react-native';
 import Video from 'react-native-video';
