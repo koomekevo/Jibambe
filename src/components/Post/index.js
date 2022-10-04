@@ -9,7 +9,9 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Fontisto from 'react-native-vector-icons/Fontisto';
 
-const Post = () => {
+const Post = props => {
+  const {post} = props;
+
   const [paused, setPaused] = useState(false);
 
   const onPlayPausePress = () => {
@@ -22,7 +24,7 @@ const Post = () => {
         <View>
           <Video
             source={{
-              uri: 'https://d8vywknz0hvjw.cloudfront.net/fitenium-media-prod/videos/45fee890-a74f-11ea-8725-311975ea9616/proccessed_720.mp4',
+              uri: post.videoUri,
             }}
             style={styles.video}
             onError={(e: LoadError) => console.log(e)}
@@ -35,35 +37,35 @@ const Post = () => {
               <Image
                 style={styles.profilePicture}
                 source={{
-                  uri: 'https://pbs.twimg.com/profile_images/1541663888600711168/-7irn83H_400x400.jpg',
+                  uri: post.user.imageUri,
                 }}
               />
               <View style={styles.iconContainer}>
                 <AntDesign name={'heart'} size={40} color="#fff" />
-                <Text style={styles.statsLabel}>123</Text>
+                <Text style={styles.statsLabel}>{post.likes}</Text>
               </View>
               <View style={styles.iconContainer}>
                 <FontAwesome name={'commenting'} size={40} color="#fff" />
-                <Text style={styles.statsLabel}>123</Text>
+                <Text style={styles.statsLabel}>{post.comments}</Text>
               </View>
               <View style={styles.iconContainer}>
                 <Fontisto name={'share-a'} size={35} color="#fff" />
-                <Text style={styles.statsLabel}>123</Text>
+                <Text style={styles.statsLabel}>{post.shares}</Text>
               </View>
             </View>
             <View style={styles.bottomContainer}>
               <View>
-                <Text style={styles.handle}>@koomekevo</Text>
-                <Text style={styles.description}>hello my girl @caro</Text>
+                <Text style={styles.handle}>@{post.user.username}</Text>
+                <Text style={styles.description}>{post.description}</Text>
                 <View style={styles.songRow}>
                   <Entypo name={'beamed-note'} size={24} color="#fff" />
-                  <Text style={styles.songName}>Nf - The search</Text>
+                  <Text style={styles.songName}>{post.songName}</Text>
                 </View>
               </View>
               <Image
                 style={styles.songImage}
                 source={{
-                  uri: 'https://pbs.twimg.com/profile_images/1541663888600711168/-7irn83H_400x400.jpg',
+                  uri: post.user.imageUri,
                 }}
               />
             </View>
