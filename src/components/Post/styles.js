@@ -5,6 +5,14 @@ const styles = StyleSheet.create({
     width: '100%',
     height: Dimensions.get('window').height,
   },
+  videoPlayButton: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+    zIndex: 100,
+  },
   video: {
     position: 'absolute',
     top: 0,
@@ -13,7 +21,7 @@ const styles = StyleSheet.create({
     right: 0,
   },
   uiContainer: {
-    height: '95%',
+    height: '100%',
     justifyContent: 'flex-end',
     backgroundColor: 'flex-end',
   },
