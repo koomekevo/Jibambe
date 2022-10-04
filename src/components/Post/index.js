@@ -5,6 +5,9 @@ import {View, Text, TouchableWithoutFeedback, Image} from 'react-native';
 import Video from 'react-native-video';
 import styles from './styles';
 import Entypo from 'react-native-vector-icons/Entypo';
+import AntDesign from 'react-native-vector-icons/AntDesign';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Fontisto from 'react-native-vector-icons/Fontisto';
 
 const Post = () => {
   const [paused, setPaused] = useState(false);
@@ -36,15 +39,15 @@ const Post = () => {
             }}
           />
           <View style={styles.iconContainer}>
-            <Entypo name={'beamed-note'} size={40} color="#fff" />
+            <AntDesign name={'heart'} size={40} color="#fff" />
             <Text style={styles.statsLabel}>123</Text>
           </View>
           <View style={styles.iconContainer}>
-            <Entypo name={'beamed-note'} size={40} color="#fff" />
+            <FontAwesome name={'commenting'} size={40} color="#fff" />
             <Text style={styles.statsLabel}>123</Text>
           </View>
           <View style={styles.iconContainer}>
-            <Entypo name={'beamed-note'} size={40} color="#fff" />
+            <Fontisto name={'share-a'} size={40} color="#fff" />
             <Text style={styles.statsLabel}>123</Text>
           </View>
         </View>
