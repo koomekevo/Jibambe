@@ -46,6 +46,7 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-end',
     height: 300,
     justifyContent: 'space-between',
+    marginRight: 5,
   },
   profilePicture: {
     width: 50,
@@ -54,13 +55,14 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#fff',
   },
-  iconsContainer: {
+  iconContainer: {
     alignItems: 'center',
   },
   statsLabel: {
     color: '#fff',
     fontSize: 16,
     fontWeight: '600',
+    marginTop: 5,
   },
 });
 

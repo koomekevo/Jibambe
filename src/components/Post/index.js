@@ -47,7 +47,7 @@ const Post = () => {
             <Text style={styles.statsLabel}>123</Text>
           </View>
           <View style={styles.iconContainer}>
-            <Fontisto name={'share-a'} size={40} color="#fff" />
+            <Fontisto name={'share-a'} size={35} color="#fff" />
             <Text style={styles.statsLabel}>123</Text>
           </View>
         </View>
