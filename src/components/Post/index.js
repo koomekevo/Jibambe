@@ -29,25 +29,23 @@ const Post = () => {
       </TouchableWithoutFeedback>
       <View style={styles.uiContainer}>
         <View style={styles.rightContainer}>
-          <View style={styles.profilePictureContainer}>
-            <Image
-              style={styles.profilePicture}
-              source={{
-                uri: 'https://pbs.twimg.com/profile_images/1541663888600711168/-7irn83H_400x400.jpg',
-              }}
-            />
-            <View style={styles.iconContainer}>
-              <Entypo name={'beamed-note'} size={40} color="#fff" />
-              <Text syle={styles.statsLabel}>123</Text>
-            </View>
-            <View style={styles.iconContainer}>
-              <Entypo name={'beamed-note'} size={40} color="#fff" />
-              <Text syle={styles.statsLabel}>123</Text>
-            </View>
-            <View style={styles.iconContainer}>
-              <Entypo name={'beamed-note'} size={40} color="#fff" />
-              <Text syle={styles.statsLabel}>123</Text>
-            </View>
+          <Image
+            style={styles.profilePicture}
+            source={{
+              uri: 'https://pbs.twimg.com/profile_images/1541663888600711168/-7irn83H_400x400.jpg',
+            }}
+          />
+          <View style={styles.iconContainer}>
+            <Entypo name={'beamed-note'} size={40} color="#fff" />
+            <Text style={styles.statsLabel}>123</Text>
+          </View>
+          <View style={styles.iconContainer}>
+            <Entypo name={'beamed-note'} size={40} color="#fff" />
+            <Text style={styles.statsLabel}>123</Text>
+          </View>
+          <View style={styles.iconContainer}>
+            <Entypo name={'beamed-note'} size={40} color="#fff" />
+            <Text style={styles.statsLabel}>123</Text>
           </View>
         </View>
         <View style={styles.bottomContainer}>

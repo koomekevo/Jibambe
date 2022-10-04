@@ -44,6 +44,8 @@ const styles = StyleSheet.create({
   // Right Container
   rightContainer: {
     alignSelf: 'flex-end',
+    height: 300,
+    justifyContent: 'space-between',
   },
   profilePicture: {
     width: 50,
@@ -51,6 +53,14 @@ const styles = StyleSheet.create({
     borderRadius: 25,
     borderWidth: 2,
     borderColor: '#fff',
+  },
+  iconsContainer: {
+    alignItems: 'center',
+  },
+  statsLabel: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
   },
 });
 

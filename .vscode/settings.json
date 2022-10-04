@@ -13,8 +13,7 @@
     "jibambe",
     "stepforward"
   ],
-  "python.autoComplete.extraPaths": [
-  ],
+  "python.autoComplete.extraPaths": [],
   "flow.useNPMPackagedFlow": true,
-  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow",
+  "flow.pathToFlow": "${workspaceFolder}/node_modules/.bin/flow"
 }
