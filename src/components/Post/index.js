@@ -52,12 +52,20 @@ const Post = () => {
           </View>
         </View>
         <View style={styles.bottomContainer}>
-          <Text style={styles.handle}>@koomekevo</Text>
-          <Text style={styles.description}>hello my girl @caro</Text>
-          <View style={styles.songRow}>
-            <Entypo name={'beamed-note'} size={24} color="#fff" />
-            <Text style={styles.songName}>Nf - The search</Text>
+          <View>
+            <Text style={styles.handle}>@koomekevo</Text>
+            <Text style={styles.description}>hello my girl @caro</Text>
+            <View style={styles.songRow}>
+              <Entypo name={'beamed-note'} size={24} color="#fff" />
+              <Text style={styles.songName}>Nf - The search</Text>
+            </View>
           </View>
+          <Image
+            style={styles.songImage}
+            source={{
+              uri: 'https://pbs.twimg.com/profile_images/1541663888600711168/-7irn83H_400x400.jpg',
+            }}
+          />
         </View>
       </View>
     </View>
