@@ -9,11 +9,11 @@ const HomeBottomTabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={{
-        tabStyle: {
+        tabBarStyle: {
           backgroundColor: '#000000',
         },
         headerShown: false,
-        activeTintColor: '#fff',
+        tabBarActiveTintColor: '#fff',
       }}>
       <Tab.Screen
         name={'Home'}
