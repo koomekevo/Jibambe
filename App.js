@@ -10,7 +10,6 @@
 import 'react-native-gesture-handler';
 import React from 'react';
 import type {Node} from 'react';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 import {SafeAreaView, StatusBar} from 'react-native';
 import Navigation from './src/navigation';
 
