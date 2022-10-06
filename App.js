@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -16,8 +17,8 @@ import Navigation from './src/navigation';
 const App: () => Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
+      <StatusBar barStyle="light-content" />
+      <SafeAreaView style={{flex: 1, backgroundColor: '#000000'}}>
         <Navigation />
       </SafeAreaView>
     </>
