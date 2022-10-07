@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
     height: 300,
     justifyContent: 'space-between',
     marginRight: 5,
+    bottom: 50,
   },
   profilePicture: {
     width: 50,
