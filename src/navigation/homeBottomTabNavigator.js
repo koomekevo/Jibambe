@@ -26,7 +26,7 @@ const HomeBottomTabNavigator = () => {
         component={Home}
         options={{
           tabBarIcon: ({color}) => (
-            <Entypo name={'home'} size={20} color={color} />
+            <Entypo name={'home'} size={25} color={color} />
           ),
         }}
       />
@@ -35,7 +35,7 @@ const HomeBottomTabNavigator = () => {
         component={() => <Text>Search</Text>}
         options={{
           tabBarIcon: ({color}) => (
-            <AntDesign name={'search1'} size={20} color={color} />
+            <AntDesign name={'search1'} size={25} color={color} />
           ),
         }}
       />
@@ -46,7 +46,7 @@ const HomeBottomTabNavigator = () => {
           tabBarIcon: ({color}) => (
             <Image
               source={uploadIcon}
-              style={{height: 30, resizeMode: 'contain'}}
+              style={{height: 35, resizeMode: 'contain'}}
             />
           ),
           tabBarLabel: () => null,
@@ -59,7 +59,7 @@ const HomeBottomTabNavigator = () => {
           tabBarIcon: ({color}) => (
             <MaterialCommunityIcons
               name={'message-minus-outline'}
-              size={20}
+              size={25}
               color={color}
             />
           ),
@@ -70,7 +70,7 @@ const HomeBottomTabNavigator = () => {
         component={() => <Text>Profile</Text>}
         options={{
           tabBarIcon: ({color}) => (
-            <Ionicons name={'person-outline'} size={20} color={color} />
+            <Ionicons name={'person-outline'} size={25} color={color} />
           ),
         }}
       />
