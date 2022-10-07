@@ -1,10 +1,13 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
+import {Image} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../screens/Home';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import uploadIcon from '../assets/images/uploadIcon.png';
 
 const Tab = createBottomTabNavigator();
 
@@ -41,7 +44,10 @@ const HomeBottomTabNavigator = () => {
         component={Home}
         options={{
           tabBarIcon: ({color}) => (
-            <Entypo name={'upload'} size={35} color={color} />
+            <Image
+              source={uploadIcon}
+              style={{height: 30, resizeMode: 'contain'}}
+            />
           ),
           tabBarLabel: () => null,
         }}
