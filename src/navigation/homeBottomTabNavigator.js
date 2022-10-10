@@ -2,7 +2,7 @@
 import React from 'react';
 import {Image, Text} from 'react-native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Home from '../screens/Home';
+import HomeScreen from '../screens/HomeScreen';
 import Entypo from 'react-native-vector-icons/Entypo';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -23,7 +23,7 @@ const HomeBottomTabNavigator = () => {
       }}>
       <Tab.Screen
         name={'Home'}
-        component={Home}
+        component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
             <Entypo name={'home'} size={25} color={color} />

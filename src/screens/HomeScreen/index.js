@@ -4,7 +4,7 @@ import {View, Text, FlatList, Dimensions} from 'react-native';
 import Post from '../../components/Post';
 import posts from '../../../data/posts';
 
-const Home = () => {
+const HomeScreen = () => {
   return (
     <View>
       <FlatList
@@ -19,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomeScreen;
