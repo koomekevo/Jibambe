@@ -20,7 +20,11 @@ Run `cd Jibambe` to access app.
 
 Run `npm install` to install dependencies.
 
-Run `npm start` to start the app.
+Run `npx react-native start` to start the Metro Bundle.
+
+Run `npx react-native run-android` to run the app on Android Device/Emulator.
+
+Run `npx react-native run-ios` to run the app on iOS Device/Emulator.
 ## Authors
 
 👤 **Kevin Koome**
