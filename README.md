@@ -18,6 +18,8 @@ Clone the repo with `https://github.com/koomekevo/Jibambe.git`
 
 Run `cd Jibambe` to access app.
 
+Run `npm install` to install dependencies.
+
 Run `npm start` to start the app.
 ## Authors
 
