@@ -7,7 +7,6 @@ Jibambe is a TikTok clone that has been created by React Native and runs on AWS.
 - C++
 - Objective C++
 - Objective C
-- Makefile
 - Ruby
  
 ## Getting Started
